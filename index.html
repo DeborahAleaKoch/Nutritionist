@@ -338,8 +338,62 @@
       </section>
 
       <form onsubmit="; return false">
+        <div class="font-small input-container">
+          <label for="body-size">Body size (in cm)</label>
+          <input type="number" name="bodySize" id="body-size" />
+        </div>
+        <div class="font-small input-container">
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" />
+        </div>
 
+        <div class="font-small input-container">
+          <label for="body-wight">Weight</label>
+          <input type="number" name="bodyWeight" id="body-weight" />
+        </div>
+        <div class="font-small input-container">
+          <label for="activity">Activity</label>
+          <select type="s" name="activity" id="activity" required>
+            <option value="" disabled selected>
+              Exclusively sedentary work with little or no physical activity in
+              leisure time...
+            </option>
+            <option value="0.95">sleeping</option>
+            <option value="1.2">sitting or Laying</option>
+            <option value="1.5">light work</option>
+            <option value="1.7">mostly sitting</option>
+            <option value="1.9">mostly walking or standing</option>
+            <option value="2.2">hard Work</option>
+          </select>
+        </div>
+
+        <div class="input-container radio-center">
+          <p class="font-small">Gender</p>
+          <div class="input-radio">
+            <div>
+              <input type="radio" name="gender" id="female" checked />
+              <label class="font-small" for="female">Female</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="male" />
+              <label class="font-small" for="male">Male</label>
+            </div>
+          </div>
+          <button type="submit">Calculate</button>
+        </div>
       </form>
+
+      <section>
+        <div class="f-hero">
+          <h2>Our Pricing</h2>
+          <p>
+            We outline our flexible and affordable options to support you on
+            your journey to optimal health and nutrition. We believe that
+            everyone deserves access to personalized nutrition guidance and
+            resources
+          </p>
+        </div>
+      </section>
     </main>
   </body>
 </html>

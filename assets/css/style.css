@@ -292,7 +292,7 @@ header nav a {
 
 .blog-flex {
   display: flex;
-  margin: var(--space-left-right);
+  /* margin: var(--space-left-right); */
   justify-content: space-between;
   margin-bottom: 1.8rem;
 }
@@ -355,4 +355,78 @@ header nav a {
 
 .text-gray {
   color: var(--light-gray);
+}
+
+/* & Form*/
+
+form {
+  background-color: var(--lighter-green-shade);
+  margin: var(--space-left-right);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3vh 0;
+  gap: 20px 0;
+  border-radius: 10px;
+  border: 1px solid var(--light-green-shade);
+  margin-bottom: 4rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+label {
+  line-height: 150%;
+}
+
+input,
+select {
+  line-height: 3.2rem;
+  border: 1px solid var(--light-green-shade);
+  border-radius: 10px;
+}
+
+select:required:invalid {
+  color: var(--light-gray);
+  height: 3.5rem;
+}
+
+.radio-center {
+  align-items: center;
+}
+
+.radio-center p {
+  margin: 8px;
+}
+
+.input-radio {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.input-radio div {
+  display: flex;
+  margin-bottom: 2.4rem;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-radio div input {
+  accent-color: var(--green-spring-shade);
+  outline: none;
+  height: 1.2rem;
+}
+
+.radio-center button {
+  width: 25rem;
+  padding: 1.125rem 2.5625rem;
+  background-color: var(--green-spring-shade);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
