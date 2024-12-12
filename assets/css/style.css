@@ -16,6 +16,10 @@ html {
   font-family: var(--font-urban);
 }
 
+body {
+  background-color: var(--bg-green);
+}
+
 img {
   width: 100%;
 }
@@ -30,9 +34,11 @@ img {
 
 :root {
   --bacis-white: #fff;
+  --bg-green: #fafdf2;
+  --btn-light-gb: #f6fbe9;
   --green-spring-shade: #cbea7b;
   --light-green-shade: #e5f5bd;
-  --lighter-green-schade: #f6fbe9;
+  --lighter-green-shade: #f6fbe9;
   --white-green-shade: #fafdf2;
   --dark-green-shade: #1a3129;
   --middle-drak-green-schade: #234338;
@@ -87,6 +93,7 @@ header nav a {
   color: white;
   padding: 10px 2vw;
   font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .btn-main {
@@ -94,6 +101,9 @@ header nav a {
   border-radius: 5px;
   line-height: 1.5rem;
   color: black;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 /* & Hero Section - Picture und Headline */
@@ -103,9 +113,10 @@ header nav a {
   align-items: center;
   justify-content: center;
   gap: 2vw;
+  margin-bottom: 10vh;
 }
 
-.hero img {
+.woman {
   width: 50%;
 }
 
@@ -119,19 +130,229 @@ header nav a {
 .hero h1 {
   margin-bottom: 20px;
   font-size: 3.625rem;
+  width: 35vw;
 }
 
 .hero p {
   margin-bottom: 25px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 150%;
 }
 
-/* .text{
-    margin-right: 10vw;
-} */
+.text {
+  margin-top: 4vh;
+  margin-right: 10vw;
+}
+
+.text p {
+  margin-bottom: 7vh;
+}
 
 .btn-area {
+  margin-bottom: 7vh;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-clear {
+  color: black;
+  border-radius: 5px;
+  line-height: 1.5rem;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  border: 1px solid #e5f5bd;
+  background-color: var(--btn-light-gb);
+  font-size: 1.3rem;
+}
+
+.custom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  width: 20%;
+  object-fit: contain;
+}
+
+.custom p {
+  padding-top: 6vh;
+}
+
+/* & Features Section */
+
+.features {
+  padding: var(--space-left-right);
+  margin-bottom: 15vh;
+}
+
+.f-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.f-hero h2 {
+  margin-bottom: 30px;
+  font-size: 3.2rem;
+}
+
+.f-hero p,
+.container-wrapper-inner p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.container-wrapper-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  margin-bottom: 15px;
+}
+
+.container-wrapper-inner div {
+  background-color: #e5f5bd4e;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.container-wrapper-inner p {
+  margin: 0 1.1vw;
+}
+
+.features-box {
+  /* border: 2px solid green; */
+  width: 48%;
+}
+
+.titel {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1vw;
   margin-bottom: 20px;
+  /* border: 2px solid pink; */
+}
+
+.titel img {
+  background-color: var(--green-spring-shade);
+  padding: 8px;
+  border-radius: 5px;
+  height: 40px;
+  width: 8%;
+}
+
+.titel h4 {
+  font-size: 2.2rem;
+}
+
+/* & Our Blogs Section */
+
+.blog-margin {
+  margin: var(--space-left-right);
+  margin-bottom: 12vh;
+}
+
+.f-hero p {
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
+
+.blog-sizing {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  background-color: var(--lighter-green-shade);
+  border-radius: 5px;
+  border: var(--light-green-shade) 1px solid;
+  padding: 2vw;
+}
+
+.blog-sizing p:nth-of-type(1) {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.blog-sizing h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.ourBlogsImgSize {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 2.5vh;
+}
+
+.blog-flex {
+  display: flex;
+  margin: var(--space-left-right);
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+}
+
+.article-footer {
+  display: flex;
+  background-color: var(--bg-green);
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid var(--green-spring-shade);
+  border-radius: 10px;
+}
+
+.blog-article-margin {
+  margin: 1.8rem 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: #4c4c4d;
+}
+
+.small-person {
+  width: 35%;
+}
+.left-content {
+  display: flex;
+  gap: 10px;
+}
+
+.right-content {
+  display: flex;
+  gap: 8px;
+}
+.blogIcon {
+  border-radius: 5px;
+  border: 1px solid #eef8d3;
+  background-color: var(--lighter-green-shade);
+  width: 50%;
+  border: 1px solid var(--green-spring-shade);
+  padding: 10px;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.font-small {
+  font-size: 1.3rem;
+}
+.font-medium {
+  font-size: 2.2rem;
+}
+.font-big {
+  font-size: 3.2rem;
+}
+
+.text-gray {
+  color: var(--light-gray);
 }
