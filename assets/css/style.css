@@ -106,6 +106,19 @@ header nav a {
   font-size: 1.3rem;
 }
 
+.burg-menu div {
+  background-color: white;
+  width: 30px;
+  height: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.burg-menu {
+  cursor: pointer;
+  display: none;
+}
+
 /* & Hero Section - Picture und Headline */
 
 .hero {
@@ -199,13 +212,13 @@ header nav a {
 }
 
 .f-hero p,
-.container-wrapper-inner p {
+.container-wrapper p {
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 150%;
 }
 
-.container-wrapper-inner {
+.container-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,13 +226,13 @@ header nav a {
   margin-bottom: 15px;
 }
 
-.container-wrapper-inner div {
+.container-wrapper div {
   background-color: #e5f5bd4e;
   padding: 15px;
   border-radius: 10px;
 }
 
-.container-wrapper-inner p {
+.container-wrapper p {
   margin: 0 1.1vw;
 }
 
@@ -584,5 +597,53 @@ footer nav {
   width: 20%;
 }
 
-
 /* & Media Queries */
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burg-menu {
+    display: block;
+  }
+  .btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .hero img {
+    width: 100%;
+  }
+  .text {
+    text-align: center;
+  }
+  .text img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container-wrapper {
+    flex-direction: column;
+  }
+  .features-box {
+    width: 100%;
+  }
+  .blog-flex{
+    flex-direction: column;
+  }
+  .blog-sizing{
+    width: 100%;
+  }
+  .pricing-section{
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+  }
+  .pricing-article{
+    width: 100%;
+  }
+}
