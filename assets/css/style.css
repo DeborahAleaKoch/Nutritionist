@@ -14,12 +14,11 @@
 html {
   font-size: 62.5%;
   font-family: var(--font-urban);
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 body {
   background-color: var(--bg-green);
-  
 }
 
 img {
@@ -80,7 +79,6 @@ header {
   height: 5vh;
   overflow: hidden;
   border: 1px solid var(--moos-green-shade);
-  /* margin: 12px 5vh; */
 }
 
 header nav {
@@ -226,7 +224,6 @@ header nav a {
 }
 
 .features-box {
-  /* border: 2px solid green; */
   width: 48%;
 }
 
@@ -236,7 +233,6 @@ header nav a {
   align-items: center;
   gap: 1vw;
   margin-bottom: 20px;
-  /* border: 2px solid pink; */
 }
 
 .titel img {
@@ -294,7 +290,6 @@ header nav a {
 
 .blog-flex {
   display: flex;
-  /* margin: var(--space-left-right); */
   justify-content: space-between;
   margin-bottom: 1.8rem;
 }
@@ -518,13 +513,15 @@ select {
 
 footer {
   background-color: var(--dark-green-shade);
+  padding: 3.3rem 5vw;
 }
 
 footer nav {
   display: flex;
-  padding: 3.3rem 5vw;
+
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 3.3rem;
 }
 
 .footer-menu {
@@ -553,3 +550,39 @@ footer nav {
   align-items: center;
   justify-content: center;
 }
+
+.footer-section {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #234338;
+  padding: 1.8rem;
+  border: 1px solid #2c5446;
+}
+
+.footer-contact {
+  display: flex;
+  line-height: 150%;
+  gap: 1vw;
+}
+
+.footer-contact div {
+  border: 1px solid #2c5446;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+  gap: 5px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.footer-icon {
+  width: 20%;
+}
+
+
+/* & Media Queries */
