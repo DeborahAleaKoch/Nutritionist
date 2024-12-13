@@ -198,7 +198,7 @@ header nav a {
 
 .features {
   padding: var(--space-left-right);
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
 }
 
 .f-hero {
@@ -264,7 +264,7 @@ header nav a {
 
 .blog-margin {
   margin: var(--space-left-right);
-  margin-bottom: 12vh;
+  margin-bottom: 8vh;
 }
 
 .f-hero p {
