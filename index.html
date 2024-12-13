@@ -339,7 +339,7 @@
       </section>
 
       <!-- *Form -->
-      <form onsubmit="; return false">
+      <form onsubmit="getCalories(); return false">
         <div class="font-small input-container">
           <label for="body-size">Body size (in cm)</label>
           <input type="number" name="bodySize" id="body-size" />
@@ -360,11 +360,13 @@
               Exclusively sedentary work with little or no physical activity in
               leisure time...
             </option>
-            <option value="0.95">sleeping</option>
-            <option value="1.2">sitting or Laying</option>
-            <option value="1.5">light work</option>
-            <option value="1.7">mostly sitting</option>
-            <option value="1.9">mostly walking or standing</option>
+            <option value="0.95" name="activity">sleeping</option>
+            <option value="1.2" name="activity">sitting or Laying</option>
+            <option value="1.5" name="activity">light work</option>
+            <option value="1.7" name="activity">mostly sitting</option>
+            <option value="1.9" name="activity">
+              mostly walking or standing
+            </option>
             <option value="2.2">hard Work</option>
           </select>
         </div>
@@ -373,26 +375,33 @@
           <p class="font-small">Gender</p>
           <div class="input-radio">
             <div>
-              <input type="radio" name="gender" id="female" checked />
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+                checked
+              />
               <label class="font-small" for="female">Female</label>
             </div>
             <div>
-              <input type="radio" name="gender" id="male" />
+              <input type="radio" name="gender" id="male" value="male" />
               <label class="font-small" for="male">Male</label>
             </div>
           </div>
           <button type="submit">Calculate</button>
+          <h3 class="output-calorie"></h3>
 
           <div class="table-grid">
             <p></p>
             <p class="">kcal</p>
             <p class="">KJ</p>
             <p class="">Basal Metabolic Rate</p>
-            <p class="">1745.14</p>
-            <p class="">7358.18</p>
+            <p class="basalKcal"></p>
+            <p class="totalKcal"></p>
             <p class="">Total Daily Energy Expenditure</p>
-            <p class="">2636.20</p>
-            <p class="">110137.30</p>
+            <p class="basalKJ"></p>
+            <p class="totalKJ"></p>
           </div>
         </div>
       </form>
@@ -463,5 +472,25 @@
         </article>
       </section>
     </main>
+
+    <!-- *Footer -->
+    <footer>
+      <nav>
+        <img class="icon" src="./assets/img/Logo_Desktop.svg" alt="Logo" />
+        <div class="menu font-small footer-menu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Team</a>
+          <a href="#">Process</a>
+          <a href="#">Printing</a>
+          <a href="#">Blog</a>
+          <a class="" href="#">Contact Us</a>
+        </div>
+        <div class="gtt">
+          <p class="font-small">Get to Top</p>
+          <a href="#">↑</a>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

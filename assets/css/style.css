@@ -14,10 +14,12 @@
 html {
   font-size: 62.5%;
   font-family: var(--font-urban);
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--bg-green);
+  
 }
 
 img {
@@ -391,6 +393,9 @@ select {
 
 select:required:invalid {
   color: var(--light-gray);
+}
+
+select {
   height: 3.5rem;
 }
 
@@ -506,4 +511,45 @@ select:required:invalid {
   text-align: center;
   width: 100%;
   line-height: 150%;
+  cursor: pointer;
+}
+
+/* & Footer */
+
+footer {
+  background-color: var(--dark-green-shade);
+}
+
+footer nav {
+  display: flex;
+  padding: 3.3rem 5vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-menu {
+  display: flex;
+  gap: 1.6vw;
+  font-weight: 600;
+}
+
+.gtt {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.gtt p {
+  color: white;
+  line-height: 150%;
+}
+
+.gtt a {
+  background-color: var(--moos-green-shade);
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
