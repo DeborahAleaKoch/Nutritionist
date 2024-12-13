@@ -14,7 +14,7 @@
 html {
   font-size: 62.5%;
   font-family: var(--font-urban);
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -605,6 +605,7 @@ footer nav {
   .burg-menu {
     display: block;
   }
+
   .btn-area {
     display: flex;
     justify-content: center;
@@ -626,24 +627,64 @@ footer nav {
 }
 
 @media screen and (max-width: 550px) {
+  .icon {
+    width: 30%;
+  }
+
   .container-wrapper {
     flex-direction: column;
   }
+  .hero h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero p {
+    margin-left: 5vh;
+  }
+
+  .custom {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .blog-sizing {
+    margin-bottom: 15px;
+  }
+
   .features-box {
     width: 100%;
   }
-  .blog-flex{
+  .blog-flex {
     flex-direction: column;
   }
-  .blog-sizing{
+  .blog-sizing {
     width: 100%;
   }
-  .pricing-section{
+  .pricing-section {
     display: flex;
     flex-direction: column;
-   gap: 20px;
+    gap: 20px;
   }
-  .pricing-article{
+  .pricing-article {
     width: 100%;
+  }
+
+  .footer-contact,
+  .footer-section {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .footer-icon {
+    width: 10%;
+  }
+
+  .last-p {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
   }
 }
